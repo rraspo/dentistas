@@ -98,6 +98,17 @@ export default function Login({ status, canResetPassword }: LoginProps) {
                             <TextLink href={register()} tabIndex={5}>
                                 Sign up
                             </TextLink>
+                            <a
+                                href="/auth/google"
+                                className="mt-6 inline-flex w-full items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50"
+                            >
+                                <img
+                                    src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+                                    className="mr-2 h-5 w-5"
+                                    alt="Google"
+                                />
+                                Continue with Google
+                            </a>
                         </div>
                     </>
                 )}
